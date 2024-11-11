@@ -13,7 +13,7 @@ class Exercise30Test {
     @Test
     @DisplayName("Test if divisionWithCustomException method throws a custom exception")
     void testThrowCustomException() {
-        assertThrows(DivisionByZeroException.class ,() -> Exercise30.divisionWithCustomException(3,0), "Exception not throwed");
+        assertThrows(Exercise30.DivisionByZeroException.class ,() -> Exercise30.divisionWithCustomException(3,0), "Exception not throwed");
     }
 
     @Test
